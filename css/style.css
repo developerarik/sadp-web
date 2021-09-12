@@ -1,0 +1,142 @@
+/* ==== GOOGLE FONTS ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+ /*==== GLOBAL VARIABLES DEFINE CSS ====*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	/*Background Color*/
+	--bg-pink: #ff267b;
+	--bg-dark-blue: #5A04DE;
+	--light-pink-grad: linear-gradient(335.64deg,#ff589b -19.22%,#ff136f 118.87%);
+}
+
+
+
+
+/*==== COMMON CSS ====*/
+
+.fs-7{
+	font-size: 1rem;
+}
+.btn-rounded{
+	border-radius: 52px !important;
+}
+.btn:focus, .accordion-button:focus{
+	outline: none;
+	box-shadow: none;
+}
+#btn{
+	background: var(--light-pink-grad)!important;
+	color: #fff;
+	padding: 8px 20px !important;
+	transition: 0.3s;
+}
+input:focus{
+	box-shadow: none !important;
+}
+hr{
+	color: var(--bg-dark-blue);
+}
+
+
+
+
+/*=========================
+		HEADER CSS
+=========================*/
+
+.navbar{
+	background: transparent;
+	z-index: 999;
+	padding: 20px 100px !important;
+}
+.navbar-brand{
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+.nav-link{
+	font-family: 'Lato', sans-serif;
+}
+.nav-link:hover{
+	color: var(--bg-pink) !important;
+}
+
+
+
+
+/*=======================
+		HOME CSS
+========================*/
+
+.home{
+	background: var(--bg-dark-blue);
+	height: 100vh;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+.home-heading1{
+	margin-top: 220px;
+	font-size: 4rem;
+	color: white;
+}
+.changing-heading{
+	font-size: 2.7rem;
+}
+.home-little-quote{
+	margin-top: 185px;
+	position: absolute;
+	letter-spacing: 2px;
+	opacity: 0.8;
+	font-size: 19px;
+}
+.home-btn:hover{
+	transform: scale(1.16);
+	box-shadow: 1px 1px 13px var(--bg-pink);
+}
+#home-img{
+	animation: float 6s ease-in-out infinite;
+	margin-top: 5.1rem !important;
+}
+/*Image Folating Keyframe*/
+@keyframes float{
+	0%{
+		transform: translateY(0px);
+		
+	}
+	50%{
+		transform: translateY(-17px);
+		
+	}
+	100%{
+		transform: translateY(0px);
+		
+	}
+}
+
+
+
+
+
+
+
+
+.card-body img{
+	min-width: 50%;
+	max-height: 200px;
+}
+
+
+
+
+
+
+
+
+
